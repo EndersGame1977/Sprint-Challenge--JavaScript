@@ -81,20 +81,9 @@ const universities = [];
 for (let i = 0; i < graduates.length; i++) {
   const university = graduates[i].university;
   universities.push(university);
+  universities.sort();
 }
 console.log(universities);
-
-// Comeback to this as I've spent to much time on it.
-// for (let i = 0; i < universities.length; i++) {
-//   if (universities[i] < universities[i+1]) {
-
-//   }
-//   for (let i = 0; i < universities.length; i++) {
-
-//     if (universities[i] < universities[i+1]) {return element1[-1]} 
-//     console.log(universities);
-//   }
-// }
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
@@ -114,17 +103,16 @@ console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 
-//Comeback!!
-// const uni = [];
-// for (let i = 0; i < graduates.length; i++) {
-//   const element = graduates[i].university;
-//   const temparray = []; 
-//   temparray.push(element);
-//   if (temparray.includes('uni')) {
-//     uni.push(element);
-//   }
-// }
-// console.log(uni);
+
+const uni = [];
+for (let i = 0; i < graduates.length; i++) {
+  const university = graduates[i].university;
+  uni.push(university);
+  uni.toString();
+  uni.includes(uni);
+  uni.join(", ")
+}
+console.log(uni);
 
 
 // ==== ADVANCED Array Methods ====
